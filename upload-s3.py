@@ -6,12 +6,15 @@ import os
 import sys
 import atexit
 import imghdr
+import random
+import string
 from subprocess import call
 from os.path import expanduser, exists, basename, getsize
 from workflow import Workflow
 
 def capture():
-    file_name = datetime.datetime.now().strftime('%Y_%m_%d_%H_%M_%S.png')
+    randomBit = ''.join(random.SystemRandom().choice(string.ascii_lowercase + string.ascii_uppercase + string.digits) for _ in range(5))
+    file_name = datetime.datetime.now().strftime('%Y_%m_%d_%H_%M_%S'+randomBit+'.png')
     if (sys.argv[1] != ""):
         file_path = sys.argv[1]
     else:
