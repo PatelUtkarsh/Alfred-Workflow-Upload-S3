@@ -28,7 +28,7 @@ Upload image from clipboard:
 upload
 ```
 
-Upload image from local:
+Upload file from local:
 
 ```bash
 upload TYPE-FILENAME-HERE
