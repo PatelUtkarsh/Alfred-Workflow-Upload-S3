@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: tinify
+Version: 1.5.2
+Summary: Tinify API client.
+Home-page: https://tinify.com/developers
+Author: Jacob Middag
+Author-email: info@tinify.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Requires-Dist: requests (<3.0.0,>=2.7.0)
+Provides-Extra: test
+Requires-Dist: nose (<2.0,>=1.3) ; extra == 'test'
+Requires-Dist: httpretty (<1.0.0,>=0.8.10) ; extra == 'test'
+Requires-Dist: mock (<2.0,>=1.3) ; extra == 'test'
+
+Python client for the Tinify API. Tinify compresses your images intelligently. Read more at https://tinify.com.
+
+
