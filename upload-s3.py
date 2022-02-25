@@ -30,6 +30,12 @@ def capture():
         save = call(['./pngpaste', file_path])
         if save == 1:
             sys.exit()
+    tinypng_key = os.getenv('tinypng_api_key')
+    # If content type starts with 'image/' then compress.
+    if content_type.startswith('image/') and tinypng_key:
+        import tinify
+        tinify.key = tinypng_key
+        tinify.from_file(file_path).to_file(file_path)
     return file_path, file_name, content_type
 
 def main(wf):
