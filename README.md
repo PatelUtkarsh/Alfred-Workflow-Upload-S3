@@ -1,6 +1,6 @@
-# Alfred Workflow: Upload Screenshot to Oracle Cloud Object storage using s3 compatible API.
+# Alfred Workflow: Upload Screenshot to Oracle Object Storage
 
-This workflow helps you upload screenshot in your clipboard or local disk to S3 and put the public url of the image to your clipboard.
+This workflow helps you upload screenshot in your clipboard or local disk to oracle object-storage using s3 compatible API and put the public url of the image to your clipboard.
 
 ## Overview
 
