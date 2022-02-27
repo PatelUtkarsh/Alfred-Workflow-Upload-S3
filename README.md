@@ -23,13 +23,15 @@ Config Environment Variables:
 - namespace: Oracle namespace.
 - tinypng_api_key: Get your tinypng api key from https://tinypng.com/developers to compress images before uploading.
 
-Upload image from clipboard:
+**Note** 🗒️: if tinypng_api_key is set, it will compress original image and replace it before uploading to object storage.
+
+### Upload image from clipboard:
 
 ```bash
 upload
 ```
 
-Upload any file from local: (Note if tinypng_api_key is set, it will compress original image and replace it before uploading to object storage)
+### Upload any file from local:
 
 TinyPng will compress png, webp and jpg images.
 
@@ -37,6 +39,7 @@ TinyPng will compress png, webp and jpg images.
 ```bash
 upload TYPE-FILENAME-HERE
 ```
+
 
 ## Forked source: 🙌
 - https://github.com/tonyxu-io/Alfred-Workflow-Upload-S3
