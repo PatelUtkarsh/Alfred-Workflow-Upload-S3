@@ -52,7 +52,14 @@ def main(wf):
         endpoint_url="https://%s.compat.objectstorage.%s.oraclecloud.com" %(namespace, region_name)
     )
     s3.upload_file(file_path, bucket_name, file_name, ExtraArgs={'ContentType': content_type})
-    output = "https://objectstorage.%s.oraclecloud.com/n/%s/b/%s/o/%s" %(region_name,namespace,bucket_name,file_name)
+    shorturl = os.getenv('shorturl')
+    # if short url is not empty and exists.
+    if shorturl:
+        if shorturl[len(shorturl)-1] != "/":
+            shorturl = shorturl + "/"
+        output = "%s%s" %(shorturl,file_name)
+    else:
+        output = "https://objectstorage.%s.oraclecloud.com/n/%s/b/%s/o/%s" %(region_name,namespace,bucket_name,file_name)
     print (output,end='')
 
 if __name__ == '__main__':

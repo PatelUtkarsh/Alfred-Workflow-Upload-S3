@@ -22,6 +22,7 @@ Config Environment Variables:
 - bucket_name: Oracle bucket name. e.g. `my-bucket-name`
 - namespace: Oracle namespace.
 - tinypng_api_key: Get your tinypng api key from https://tinypng.com/developers to compress images before uploading.
+- short_url: You can add proxy to cloudflare or aws lambda to make url short. Example: https://gist.github.com/PatelUtkarsh/0438735990e0b6f373b4deaf7f9be277
 
 **Note** 🗒️: if tinypng_api_key is set, it will compress original image and replace it before uploading to object storage.
 
@@ -40,6 +41,8 @@ TinyPng will compress png, webp and jpg images.
 upload TYPE-FILENAME-HERE
 ```
 
+### Issue with python 2?
+Read setup guide at https://www.alfredapp.com/help/kb/python-2-monterey/
 
 ## Forked source: 🙌
 - https://github.com/tonyxu-io/Alfred-Workflow-Upload-S3
