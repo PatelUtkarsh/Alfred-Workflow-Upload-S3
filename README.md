@@ -4,7 +4,14 @@ This workflow helps you upload screenshot in your clipboard or local disk to ora
 
 ## Overview
 
-This workflow is written in Python. And used Boto3 as AWS client to upload image.
+This workflow is written in Python and used Boto3 as AWS client to upload files.
+
+Upload clipboard image directly or upload a file. 
+
+
+
+[![Watch the video](https://s.utkarshpatel.com/video-placeholder-hinP7.png)](https://s.utkarshpatel.com/screenshot-workflow-encoded-4E1b7.mp4)
+
 
 ## Download
 
@@ -21,8 +28,8 @@ Config Environment Variables:
 - region_name: Oracle cloud region name
 - bucket_name: Oracle bucket name. e.g. `my-bucket-name`
 - namespace: Oracle namespace.
-- tinypng_api_key: Get your tinypng api key from https://tinypng.com/developers to compress images before uploading.
-- short_url: You can add proxy to cloudflare or aws lambda to make url short. Example: https://gist.github.com/PatelUtkarsh/0438735990e0b6f373b4deaf7f9be277
+- tinypng_api_key: Get your tinypng api key from https://tinypng.com/developers to compress images before uploading. (optional)
+- short_url: You can add proxy to cloudflare or aws lambda to make url short. Example: https://gist.github.com/PatelUtkarsh/0438735990e0b6f373b4deaf7f9be277 (optional)
 
 **Note** 🗒️: when `tinypng_api_key` is set, it will compress original image and replace it before uploading to object storage.
 
