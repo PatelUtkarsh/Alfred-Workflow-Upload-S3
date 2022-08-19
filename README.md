@@ -24,7 +24,7 @@ Config Environment Variables:
 - tinypng_api_key: Get your tinypng api key from https://tinypng.com/developers to compress images before uploading.
 - short_url: You can add proxy to cloudflare or aws lambda to make url short. Example: https://gist.github.com/PatelUtkarsh/0438735990e0b6f373b4deaf7f9be277
 
-**Note** 🗒️: if tinypng_api_key is set, it will compress original image and replace it before uploading to object storage.
+**Note** 🗒️: when `tinypng_api_key` is set, it will compress original image and replace it before uploading to object storage.
 
 ### Upload image from clipboard:
 
