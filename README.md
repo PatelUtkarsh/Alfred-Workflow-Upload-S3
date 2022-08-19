@@ -2,13 +2,15 @@
 
 This workflow helps you upload screenshot in your clipboard or local disk to oracle object-storage using s3 compatible API and put the public url of the image to your clipboard.
 
+Oracle offers [always free 10gb object-storage](https://www.oracle.com/cloud/free/#always-free) which is plenty. 
+
+Using tinypng api will reduce screenshot size drastically and help enduser save bandwidth.
+
 ## Overview
 
 This workflow is written in Python and used Boto3 as AWS client to upload files.
 
-Upload clipboard image directly or upload a file. 
-
-
+Upload clipboard image directly or upload a file.
 
 [![Watch the video](https://s.utkarshpatel.com/video-placeholder-hinP7.png)](https://s.utkarshpatel.com/screenshot-workflow-encoded-4E1b7.mp4)
 
@@ -33,7 +35,7 @@ Config Environment Variables:
 
 **Note** 🗒️: when `tinypng_api_key` is set, it will compress original image and replace it before uploading to object storage.
 
-### Upload image from clipboard:
+### Upload image from clipboard in alfred type:
 
 ```bash
 upload
